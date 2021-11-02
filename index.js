@@ -292,21 +292,32 @@ HINT - try looking up the .includes() method
 
 
 function vowelCounter(string) {
-  let lowers = [string.toLowerCase()];
-  // const letters = lowers.split('');
+  let lowers = string.toLowerCase();
   let count = 0;
-  // console.log(letters)
   for (let i = 0; i <= lowers.length; i++) {
-    if(lowers[i] === "a"){
-      count += 1
+    if(lowers[i] === 'a'){
+      count++;
+      console.log(lowers[i])
+    } else if(lowers[i] === 'e'){
+      count++;
+      console.log(lowers[i])
+    } else if(lowers[i] === 'i'){
+      count++;
+      console.log(lowers[i])
+    } else if(lowers[i] === 'o'){
+      count++;
+      console.log(lowers[i])
+    } else if(lowers[i] === 'u'){
+      count++;
+      console.log(lowers[i])
     }
+    
   }
   return count
-  /*add your code here*/
 }
-let test = 'nvwAalsehr'
-console.log(vowelCounter('nvwAalsehr'))
-console.log(test[3])
+
+console.log(vowelCounter('thIs is a strIng of WOrds and lEtters'))
+
 
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
